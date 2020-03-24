@@ -6,7 +6,7 @@ FROM
 WHERE
     year > 1999
     AND gender = 'F'
-    AND name LIKE '%ie%'
+    AND LOWER(name) LIKE LOWER('%ie%')
 GROUP BY
     year
 ORDER BY
