@@ -20,6 +20,10 @@ use Google\Cloud\Datastore\DatastoreClient;
 	</form>
 	<?php
 	if (array_key_exists('username', $_POST) && array_key_exists('password', $_POST)) {
+		
+		/*"Entities, Properties, and Keys  |  Cloud Datastore Documentation", Google Cloud, 2020. [Online]. 
+		Available: https://cloud.google.com/datastore/docs/concepts/entities#datastore-datastore-basic-entity-php. 
+		[Accessed: 24- Mar- 2020].*/
 
 		# Your Google Cloud Platform project ID
 		$projectId = 's3661741-task2';
